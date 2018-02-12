@@ -20,7 +20,7 @@ declare class Profile {
 
     public extend(addOn: string): void;
 
-    public score(scoreMethod: string): number;
+    public score(scoreMethod: string): {[key: string]: number};
 
 }
 declare namespace Profile{
