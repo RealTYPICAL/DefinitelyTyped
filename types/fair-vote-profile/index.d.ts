@@ -18,7 +18,7 @@ export declare class Profile {
 
     public find(ordering: string[]): Vote[];
 
-    public vote(ballot: Vote): void;
+    public vote(ballot: (string | string[])[]): void;
 
     public each(visitFunc: (ordering: string[], voteValue: number, index: number) => void): void;
 
