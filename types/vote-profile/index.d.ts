@@ -12,7 +12,7 @@ export interface Vote {
 
 export declare class Profile {
 
-    constructor(systems: string[]);
+    constructor(systems?: string[]);
 
     public setAlternatives(): void;
 
