@@ -14,7 +14,7 @@ export declare class Profile {
 
     constructor(systems?: string[]);
 
-    public setAlternatives(): void;
+    public setAlternatives(alternatives: string[]): void;
 
     public find(ordering: string[]): Vote[];
 
