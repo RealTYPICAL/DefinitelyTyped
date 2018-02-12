@@ -4,19 +4,15 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.7.1
 
-export interface Vote {
-    key: string;
-    ordering: string[];
-    numVotes: number;
-}
+export = Profile;
 
-export declare class Profile {
+declare class Profile {
 
     constructor(systems?: string[]);
 
     public setAlternatives(alternatives: string[]): void;
 
-    public find(ordering: string[]): Vote[];
+    public find(ordering: string[]): Profile.Vote[];
 
     public vote(ballot: (string | string[])[]): void;
 
@@ -27,4 +23,10 @@ export declare class Profile {
     public score(scoreMethod: string): number;
 
 }
-
+declare namespace Profile{
+    export interface Vote {
+        key: string;
+        ordering: string[];
+        numVotes: number;
+    }
+}
