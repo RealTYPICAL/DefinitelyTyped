@@ -2,7 +2,7 @@
 // Project: https://github.com/thirdcreed/vote-profile
 // Definitions by: James Tooley <https://github.com/RealTYPICAL>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.7.1
+// TypeScript Version: 2.6
 
 export = Profile;
 
